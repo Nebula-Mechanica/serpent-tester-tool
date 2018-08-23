@@ -109,7 +109,7 @@ function main(aWindow) {
 
 		var isTheme = /<(em:)?type>4<\/(em:)?type>/.test(instData);
 		if (isTheme) {
-			instData = instData.replace(/\[TEST\]/g, "[FIX]");
+			/*instData = instData.replace(/\[TEST\]/g, "[FIX]");
 			var cssFix = "chrome/browser/statusbar/overlay.css";
 			var cssData = `@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -137,7 +137,7 @@ function main(aWindow) {
 	opacity: 1;
 }`;
 			var cssStream = converter.convertToInputStream(cssData);
-		}
+		*/}
 
 		inputStream = converter.convertToInputStream(instData);
 
@@ -151,7 +151,7 @@ function main(aWindow) {
 		zw.removeEntry(instName, false);
 		zw.addEntryStream(instName, Date.now(), Ci.nsIZipWriter.COMPRESSION_DEFAULT, inputStream, false);
 		if (isTheme) {
-			zw.addEntryStream(cssFix, Date.now(), Ci.nsIZipWriter.COMPRESSION_DEFAULT, cssStream, false);
+			/*zw.addEntryStream(cssFix, Date.now(), Ci.nsIZipWriter.COMPRESSION_DEFAULT, cssStream, false);*/
 		}
 		if (hasManifest) {
 			zw.removeEntry(manifestName, false);

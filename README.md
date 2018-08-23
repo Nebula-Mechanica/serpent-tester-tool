@@ -1,4 +1,4 @@
-**Serpent Tester Tool** is designed for testing compatibility of add-ons with **Basilisk**. It allows to install any extension or theme, regardless of target application and versions specified in its manifest. The extensions installed via **Serpent Tester Tool** are marked with **[TEST]** (or **[FIX]** for themes) at the beginning of the name and can't be updated automatically.
+**Serpent Tester Tool** is designed for testing compatibility of Pale Moon specific add-ons with **Basilisk**. It allows to install extensions with only Pale Moon in manifest. The extensions installed via **Serpent Tester Tool** are marked with **[TEST]** (or **[FIX]** for themes) at the beginning of the name and can't be updated automatically.
 
 ##### Warning! Serpent Tester Tool is intended for advanced users and for test purposes only!
 
