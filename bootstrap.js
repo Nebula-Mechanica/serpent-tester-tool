@@ -87,8 +87,8 @@ function main(aWindow) {
 			sis.close();
 
 			manifestData = manifestData.replace(/^\xEF\xBB\xBF/, "");
-			manifestData = manifestData.replace(/\{ec8030f7\-c20a\-464f\-9b0e\-13a3a9e97384\}/gi,
-												"{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}");
+			manifestData = manifestData.replace(/\{8de7fcbb\-c55c\-4fbe\-bfc5\-fc555c87dbc4\}/gi,
+												"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}");
 
 			manifestStream = converter.convertToInputStream(manifestData);
 		}
@@ -102,7 +102,7 @@ function main(aWindow) {
 		instData = instData.replace(/<(em:)?targetApplication>[\s\S]+?<\/(em:)?targetApplication>/ig, "");
 		instData = instData.replace(/<(em:)?updateURL>[\s\S]+?<\/(em:)?updateURL>/i, "");
 		instData = instData.replace(/(em:)?updateURL\s*=\s*".+?"/i, "");
-		var PMcompatData = "<em:targetApplication><Description><em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id><em:minVersion>27.0.0a1</em:minVersion><em:maxVersion>*</em:maxVersion></Description></em:targetApplication><em:updateURL>https://localhost/update.xml</em:updateURL>";
+		var PMcompatData = "<em:targetApplication><Description><em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><em:minVersion>27.0.0a1</em:minVersion><em:maxVersion>*</em:maxVersion></Description></em:targetApplication><em:updateURL>https://localhost/update.xml</em:updateURL>";
 		instData = instData.replace("%PMcompatDataA%", PMcompatData);
 		PMcompatData = PMcompatData.replace(/em:/gi, "");
 		instData = instData.replace("%PMcompatDataB%", PMcompatData);
