@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
 	<em:id>serpentttool@nebularia</em:id>
-	<em:version>1.1.6</em:version>
+	<em:version>1.0.0</em:version>
 	<em:type>2</em:type>
 	<em:bootstrap>true</em:bootstrap>
 	<em:name>Serpent Tester Tool</em:name>
@@ -17,9 +17,9 @@ WARNING! SERPENT TESTER TOOL IS INTENDED FOR ADVANCED USERS AND FOR TEST PURPOSE
 
 Installation of improper extensions or themes may break the browser and lead to the damage or loss of data. You can't expect or ask for any support of extensions and themes installed via Moon Tester Tool neither from their authors, nor from developers of the browser. 
 
-If you find the add-on or theme that runs well, you have to contact author and ask him to provide compatibility with Pale Moon officially.</em:description>
+If you find the add-on or theme that runs well, you have to contact author and ask him to provide compatibility with Basilisk officially.</em:description>
 	<em:creator>originally created by Off JustOff &lt;Off.Just.Off@gmail.com&gt;, fork by nebularia</em:creator>
-	<em:homepageURL>https://github.com/JustOff/moon-tester-tool/</em:homepageURL>
+	<em:homepageURL>https://github.com/Nebula-Mechanica/serpent-tester-tool</em:homepageURL>
 
 	<em:localized>
 		<Description>
@@ -36,7 +36,7 @@ If you find the add-on or theme that runs well, you have to contact author and a
 
 Установка расширений или тем, не предназначенных для Basilisk, может нарушить работу браузера и привести к повреждению или потере данных. Вы не можете ожидать или просить поддержки расширений и тем, установленных с помощью Moon Tester Tool, ни от их авторов, ни от разработчиков браузера. 
 
-Если вы обнаружили, что расширение или тема работает хорошо, вам следует обратиться к автору этого дополнения и попросить его об официальной поддержке Pale Moon.</em:description>
+Если вы обнаружили, что расширение или тема работает хорошо, вам следует обратиться к автору этого дополнения и попросить его об официальной поддержке Basilisk.</em:description>
 		</Description>
 	</em:localized>
 
